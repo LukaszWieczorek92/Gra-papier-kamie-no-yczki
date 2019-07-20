@@ -37,9 +37,12 @@ function checkResult(player, ai){
 }
 function publishResult(result){
     if(result === "win"){
+        
         document.querySelector(".wins").textContent = ++gameSummary.wins;
         document.querySelector(".winner p").textContent = "Ty wygrałeś !!";
         document.querySelector(".winner p").style.color = "green";
+        
+        
     }else if(result === "loss") {
         document.querySelector(".losses").textContent = ++gameSummary.losses;
         document.querySelector(".winner p").textContent = "Przegrałeś !!";
@@ -59,14 +62,26 @@ function endGame(){
 }
 function bigResult(wins,losses){
     if(wins === 3){
+        gameSummary.wins = 0;
+        gameSummary.losses = 0;
+        document.querySelector(".wins").textContent = 0;
+        document.querySelector(".losses").textContent = 0;
         
-        alert("Gratulacje. Wygrałeś całą gre !!")
-       }else if(losses ===3){
-           wins = 0;
-        alert("Niestety. Przegrałeś !!")
+        alert("Wygrałeś cały pojedynek")
+        
+       }else if (losses === 3){
+        gameSummary.wins = 0;
+        gameSummary.losses = 0;
+        document.querySelector(".losses").textContent = 0;
+        document.querySelector(".wins").textContent = 0;
+        
+        alert("Przegrałeś całą gre")
        }
+       
+       
 
 }
+
 
 
 // funkcja odpalająca wszystkie inne funkcje
@@ -79,6 +94,7 @@ const gameResult = checkResult(game.playerHand, game.aiHand);
 publishResult(gameResult);
 endGame();
 bigResult(gameSummary.wins,gameSummary.losses);
+
 }
 
 
