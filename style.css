@@ -1,0 +1,98 @@
+*{
+    background-color: #28B4E5;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    
+
+}
+body{
+    height: 100vh;
+}
+h1{
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.select{
+    display: flex;
+    font-size: 8rem;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 100px;
+    margin: 30px auto;
+    color: white;
+    
+    
+}
+/* media  */
+@media(max-width:600px){
+
+    .select{
+        font-size: 4rem;
+        padding: 0 50px; 
+    }
+}
+
+.select div i:hover {
+text-shadow: 0 0 10px red;
+cursor: pointer;
+}
+
+.play{
+    background-color: white;
+    width: 200px;
+    /* height: 60px; */
+    text-align: center;
+    line-height: 60px;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.shedule{
+    display: flex;
+    font-size: 3rem;
+    justify-content: space-around;
+    
+    margin: 20px auto;
+    color: white;
+    overflow: hidden;
+    
+}
+
+@media(max-width:600px){
+    .shedule{
+        font-size: 1.5rem;
+    }
+}
+
+.shedule div{
+    width: 33.3%;
+    text-align: center;
+    line-height: 100px;
+}
+span{
+    color: white;
+    font-size: 4rem;
+}
+
+.winner{
+    text-align: center;
+    width:300px;
+    margin:0 auto;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.winner p {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
