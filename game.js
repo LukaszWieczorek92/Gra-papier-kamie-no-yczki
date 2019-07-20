@@ -67,7 +67,7 @@ function bigResult(wins,losses){
         document.querySelector(".wins").textContent = 0;
         document.querySelector(".losses").textContent = 0;
         
-        alert("Wygrałeś cały pojedynek")
+        alert("Wygrałeś cały pojedynek. Zagramy jeszcze raz ?")
         
        }else if (losses === 3){
         gameSummary.wins = 0;
@@ -75,7 +75,7 @@ function bigResult(wins,losses){
         document.querySelector(".losses").textContent = 0;
         document.querySelector(".wins").textContent = 0;
         
-        alert("Przegrałeś całą gre")
+        alert("Przegrałeś całą gre. Zagraj od nowa")
        }
        
        
